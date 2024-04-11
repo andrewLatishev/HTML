@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание_4</title>
+
+    <style>
+    .green_letter{
+    color: green;
+    }
+
+    .light_blue_letter{
+    color: #5555CC;
+    }
+
+    .orange_letter{
+    color: orange;
+    }
+
+    .paragraph{
+    width: 500px;
+    text-align: justify;
+    line-height: 1.2em;
+    margin: 0;
+    margin-bottom: 1.5em;
+    text-indent: 0;
+    }
+
+    .caption_h_1{
+    font-size: 1.1em;
+    margin: 1em;
+    }
+
+    .caption_h_2{
+    font-size: 1em;
+    margin: 1em;
+    }
+
+    </style>
+
+</head>
+<body>
+
+<h2 class="caption_h1">Абзац, заголовки и преформатированный текст в HTML</h2>
+
+<h3 class="caption_h2">Абзац и формирующий его тег &ltp&gt</h3>
+
+<p class="paragraph">
+    Для разбиения текста на абзацы в <span class="green_letter">HTML</span> используется элемент
+    <strong class="green_letter">«Абзац»</strong>,
+    который формируется парным тегом <strong class="green_letter">&ltp&gt</strong>
+    (от <span class="orange_letter">англ.</span> <em class="light_blue_letter">paragraph</em> &ndash; <em>абзац</em>).
+    И хотя в некоторых случаях спецификация допускает отсутствие
+    закрывающего тега, мы будем применять его всегда, явно формируя элемент
+    <span class="green_letter">«Абзац»</span>. Добавим, что абзац относится к блочным элементам,
+    поэтому по умолчанию начинается с новой строки и отделяется от остального содержимого вертикальными отступами.
+</p>
+
+<h3 class="caption_h2">Создание заголовков. Теги &lth1&gt-&lth6&gt</h3>
+
+<p class="paragraph">
+    Если возникает необходимость как-то назвать часть текста (например, параграф или раздел)
+    и выделить его относительную важность, можно воспользоваться одним из шести заголовков разного уровня, которые
+    формируются парными тегами от <strong class="green_letter">&lth1&gt</strong> до
+    <strong class="green_letter">&lth6&gt</strong>
+    (от  <span class="orange_letter">англ.</span> <em class="light_blue_letter">heading</em> &ndash; <em>заголовок</em>).
+    и также относятся к блочным элементам.
+    Заголовок первого уровня отображается самым крупным шрифтом жирного начертания,
+    остальные - поменьше, по мере убывания своей важности.
+</p>
+
+<h3 class="caption_h2">Преформатированный текст. Тег &ltpre&gt</h3>
+
+<p class="paragraph">
+    А что если нам нужно вывести исходный текст на экран без форматирования?
+    Такая ситуация случается, например, когда нужно сохранить подряд идущие пробелы и переносы строк
+    или просто сохранить исходное форматирование при отображении тех же примеров кода.
+    В таких случаях можно применить элемент <strong class="green_letter">«преформатированный текст»</strong>,
+    который формируется парным тегом <strong class="green_letter">&ltpre&gt</strong>
+    (от <span class="orange_letter">англ.</span> <em class="light_blue_letter">preformatted text</em> -
+    <em>предварительно форматированный текст</em>). Браузеры отображают его как блочный элемент.
+</p>
+
+</body>
+</html>
